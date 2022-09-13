@@ -15,51 +15,57 @@ public class TestPalindrome {
         int option;
         String inputStr = "";
 
+        // Sentient Loop
         while (true) {
 
             printMenu();
             option = input.nextInt();
 
             switch (option) {
-
-                case 1: // Read input string
-
-                    System.out.println( );
-                    System.out.print("Enter String: ");
+                case 1 -> { // Read input string
+                    System.out.print("\nEnter String: ");
                     input.nextLine();
                     inputStr = input.nextLine();
-                    break;
-                case 2: // Check if palindrome
-
-                    System.out.println();
-                    System.out.println("Entered String:\t" + inputStr);
-                    boolean palindrome = checkPalindrome();
-
+                }
+                case 2 -> { // Check if palindrome
+                    System.out.println("\nEntered String:\t" + inputStr);
+                    inputStr = inputStr.toLowerCase();
+                    boolean palindrome = inputStr.equals(reverseString(inputStr));
                     if (palindrome)
                         System.out.println("Judgment:\t\tPalindrome");
                     else
                         System.out.println("Judgment:\t\tNot Palindrome");
-
-                    break;
-                case 3: // Exit program
-                    System.exit(-1);
-                    break;
+                }
+                case 3 -> // Exit program
+                        System.exit(-1);
             }
         }
     }
 
+    // Method to reverse the string
     private static void printMenu() {
-        System.out.println();
-        System.out.println("---------------MAIN MENU--------------");
+        System.out.println("\n---------------MAIN MENU--------------");
         System.out.println("1 - Read input string");
         System.out.println("2 - Check if palindrome");
         System.out.println("3 - Exit program");
-        System.out.println();
-        System.out.print("Enter option number: ");
+        System.out.print("\nEnter option number: ");
     }
 
-    private static boolean checkPalindrome() {
+    public static String reverseString(String str)
+    {
+        char[] reverseString = new char[str.length()];
 
-        return true;
+        Stack<Character> stack = new Stack<Character>();
+
+        for (int i = 0; i < str.length(); i++) {
+            stack.push(str.charAt(i));
+        }
+
+        int i = 0;
+        while (!stack.isEmpty()) { // popping element until
+            reverseString[i++] = stack.pop();
+        }
+
+        return new String(reverseString);
     }
 }

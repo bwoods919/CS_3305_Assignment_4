@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f02cbcd2-97d3-4e26-87d8-52a423902f9b" name="Changes" comment="Set up stack class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestMyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestMyStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestPalindrome.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +39,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -49,7 +52,12 @@
       <option name="presentableId" value="Default" />
       <updated>1662750639004</updated>
       <workItem from="1662750640389" duration="2341000" />
-      <workItem from="1662761480144" duration="3982000" />
+      <workItem from="1662761480144" duration="4598000" />
+      <workItem from="1662905890093" duration="1526000" />
+      <workItem from="1662914816951" duration="4754000" />
+      <workItem from="1663012868936" duration="1282000" />
+      <workItem from="1663099178616" duration="1406000" />
+      <workItem from="1663102756319" duration="1920000" />
     </task>
     <task id="LOCAL-00001" summary="Set up stack class">
       <created>1662763355273</created>
@@ -58,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662763355273</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Set up stack class">
+      <created>1662854827841</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662854827841</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
