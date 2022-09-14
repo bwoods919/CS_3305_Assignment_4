@@ -51,8 +51,8 @@ public class TestPalindrome {
         System.out.print("\nEnter option number: ");
     }
 
-    public static String reverseString(String str)
-    {
+    public static String reverseString(String str) {
+
         char[] reverseString = new char[str.length()];
 
         Stack<Character> stack = new Stack<Character>();
