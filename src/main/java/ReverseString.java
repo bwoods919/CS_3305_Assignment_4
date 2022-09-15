@@ -22,28 +22,15 @@ public class ReverseString {
             option = input.nextInt();
 
             switch (option) {
-                case 1: // Read input
+                case 1 -> { // Read input
                     System.out.print("\nEnter String: ");
                     input.nextLine();
                     inputStr = input.nextLine();
-                    break;
-                case 2: // Print Reverse
-
-                    Stack<String> stack = new Stack();
-
-                    String[] words = inputStr.split(" ");
-
-                    for(String word: words)
-                        stack.push(word);
-
-                    System.out.println("\nEntered string:\t\t" + inputStr);
-                    System.out.print("Reversed String:\t\t");
-                    stack.printList();
-                    System.out.println();
-                    break;
-                case 3: // Exit
-                    System.exit(-1);
-                    break;
+                }
+                case 2 -> // Print Reverse
+                        reverseString(inputStr);
+                case 3 -> // Exit
+                        System.exit(-1);
             }
         }
     }
@@ -55,5 +42,21 @@ public class ReverseString {
         System.out.println("2 - Reverse and display input string");
         System.out.println("3 - Exit program");
         System.out.print("\nEnter option number: ");
+    }
+
+    // Method to reverse the string
+    public static void reverseString(String inputStr) {
+
+        Stack<String> stack = new Stack();
+
+        String[] words = inputStr.split(" ");
+
+        for(String word: words)
+            stack.push(word);
+
+        System.out.println("\nEntered string:\t\t" + inputStr);
+        System.out.print("Reversed String:\t\t");
+        stack.printList();
+        System.out.println();
     }
 }
