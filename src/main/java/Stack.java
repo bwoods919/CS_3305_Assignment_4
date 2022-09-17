@@ -9,14 +9,14 @@ public class Stack<E> {
     public Node head, tail;
     public int size;
 
-    //constructor method to create a stack
+    // method to create a stack
     public void Stack() {
         head = null;
         tail = null;
         size = 0;
     }
 
-    //method #1: push
+    // method push
     public void push(E data) {
         Node temp = new Node(data);
         if (head != null) {
@@ -26,7 +26,7 @@ public class Stack<E> {
         size++;
     }
 
-    //method #2: pop
+    // method pop
     public E pop() {
         if(isEmpty())
             return null;
@@ -36,44 +36,43 @@ public class Stack<E> {
         return data;
     }
 
-    //method #3: top
+    // method top
     public E top() {
         if(isEmpty())
             return null;
         return (E) head.data;
     }
 
-    // method #4: size
+    // method size
     public int size(){
         return size;
     }
-    // method #5: isEmpty
+    // method isEmpty
     public boolean isEmpty(){
         if(size==0)
             return true;
         return false;
     }
 
-    //================= end of your part ==============
-//method to print out the list
+// method to print out the list
     public void printList() {
         Node temp;
         temp = head;
+
         while (temp != null) {
             System.out.print(temp.data + " ");
             temp = temp.next;
         }
     }
 
-    //class to create nodes as objects
+    // class to create nodes as objects
     private class Node<E> {
 
-        private E data; //data field
-        private Node next; //link field
+        private E data;
+        private Node next;
 
-        public Node(E item) //constructor method
-        {
-            data = item;
+        public Node(E data) {
+            data = data;
             next = null;
         }
     }

@@ -5,12 +5,9 @@
 // Assignment: 4
 // IDE Name: Intellij
 
-/**
- * Need to fix the printStack method
- * */
-
 import java.util.Scanner;
 
+// Main method for the test program
 public class TestMyStack {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -26,21 +23,18 @@ public class TestMyStack {
             option = input.nextInt();
 
             switch (option) {
-                case 1: // Push element
+                case 1 -> { // Push element
                     System.out.print("\nEnter the number to push: ");
                     data = input.nextInt();
-
                     System.out.println("Pushing value " + data + " to the Stack");
                     System.out.print("Stack content before pushing " + data + " is: ");
                     integerStack.printList();
-
                     integerStack.push(data);
-
                     System.out.print("\nStack content after pushing " + data + " is: ");
                     integerStack.printList();
                     System.out.println("\n");
-                    break;
-                case 2: // Pop element
+                }
+                case 2 -> { // Pop element
                     System.out.println("\nPopping the top element from the Stack.");
                     System.out.print("Stack content before popping from the stack is: ");
                     integerStack.printList();
@@ -48,33 +42,29 @@ public class TestMyStack {
                     System.out.print("\nStack content after popping from the stack is: ");
                     integerStack.printList();
                     System.out.println("\n");
-                    break;
-                case 3: // Top Element
-                    System.out.println("\nThe top element of the stack is: " + integerStack.top() + "\n");
-                    break;
-                case 4: // Size
+                }
+                case 3 -> // Top Element
+                        System.out.println("\nThe top element of the stack is: " + integerStack.top() + "\n");
+                case 4 -> { // Size
                     System.out.println("\nThe elements of the Stack are: ");
                     printMenu();
-
                     System.out.println("\nThe size of the Stack is " + integerStack.size + "\n");
-                    break;
-                case 5: // Is empty
+                }
+                case 5 -> { // Is empty
                     System.out.println("\nThe elements of the Stack are: ");
                     printMenu();
-
                     if (integerStack.isEmpty())
                         System.out.println("\nThe Stack is Empty!\n");
                     else
                         System.out.println("\nThe Stack is Not Empty!\n");
-                    break;
-                case 6: // Print Stack Content
+                }
+                case 6 -> { // Print Stack Content
                     System.out.print("\nThe elements of the stack are: ");
                     integerStack.printList();
                     System.out.println("\n");
-                    break;
-                case 7: // Exit
-                    System.exit(-1);
-                    break;
+                }
+                case 7 -> // Exit
+                        System.exit(-1);
             }
         }
     }

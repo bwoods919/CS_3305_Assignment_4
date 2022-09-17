@@ -7,6 +7,7 @@
 
 import java.util.Scanner;
 
+// Main Method for the test palindrome program
 public class TestPalindrome {
     public static void main(String[] args) {
 
@@ -51,6 +52,7 @@ public class TestPalindrome {
         System.out.print("\nEnter option number: ");
     }
 
+    // Method to reverse the sting
     public static String reverseString(String str) {
 
         char[] reverseString = new char[str.length()];

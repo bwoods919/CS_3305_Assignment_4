@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class ReverseString {
 
+    // Main method for the reverse string program
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
@@ -55,7 +56,7 @@ public class ReverseString {
             stack.push(word);
 
         System.out.println("\nEntered string:\t\t" + inputStr);
-        System.out.print("Reversed String:\t\t");
+        System.out.print("Reversed String:\t");
         stack.printList();
         System.out.println();
     }
